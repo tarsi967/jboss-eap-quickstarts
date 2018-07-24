@@ -1,0 +1,15 @@
+[200~ 73  for resource in eap71-image-stream.json eap71-amq-persistent-s2i.json eap
+71-amq-s2i.json eap71-basic-s2i.json eap71-https-s2i.json eap71-mongodb-persiste
+nt-s2i.json eap71-mongodb-s2i.json eap71-mysql-persistent-s2i.json eap71-mysql-s
+2i.json eap71-postgresql-persistent-s2i.json eap71-postgresql-s2i.json eap71-thi
+rd-party-db-s2i.json eap71-tx-recovery-s2i.json eap71-sso-s2i.json; do echo $res
+ource;  oc replace --force -f https://raw.githubusercontent.com/jboss-openshift/
+application-templates/master/eap/$resource; done
+   74  for resource in eap71-image-stream.json eap71-amq-persistent-s2i.json eap
+71-amq-s2i.json eap71-basic-s2i.json eap71-https-s2i.json eap71-mongodb-persiste
+nt-s2i.json eap71-mongodb-s2i.json eap71-mysql-persistent-s2i.json eap71-mysql-s
+2i.json eap71-postgresql-persistent-s2i.json eap71-postgresql-s2i.json eap71-thi
+rd-party-db-s2i.json eap71-tx-recovery-s2i.json eap71-sso-s2i.json; do echo $res
+ource;  oc replace -n openshift --force -f https://raw.githubusercontent.com/jbo
+ss-openshift/application-templates/master/eap/$resource; done
+[201~
