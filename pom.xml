@@ -474,6 +474,7 @@
                 <module>websocket-hello</module>
                 <module>xml-dom4j</module>
                 <module>xml-jaxp</module>
+                <module>tran</module>
             </modules>
         </profile>
         <profile>
